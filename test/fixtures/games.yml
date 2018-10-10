@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_played: 2018-10-10 13:32:54
+  opponent: MyString
+  my_score: 1
+  other_score: 1
+
+two:
+  date_played: 2018-10-10 13:32:54
+  opponent: MyString
+  my_score: 1
+  other_score: 1

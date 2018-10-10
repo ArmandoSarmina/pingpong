@@ -1,0 +1,9 @@
+
+<%= form_for :game do |f| %>
+
+  Date Playe:   <%= f.text_field :date_played %><br />
+  Opponent:     <%= f.text_field :opponent %><br />
+  Ḿy Score:     <%= f.text_field :my_score %><br />
+  Their Score:  <%= f.text_field :other_score %><br />  
+  <%= f.submit %>
+<% end %>
