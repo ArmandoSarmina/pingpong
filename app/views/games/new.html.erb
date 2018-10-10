@@ -1,9 +1,6 @@
+<h1>New Game</h1>
 
-<%= form_for :game do |f| %>
+<%= render 'form' %>
 
-  Date Played:   <%= f.datetime_field :date_played %><br />
-  Opponent:     <%= f.text_field :opponent %><br />
-  Ḿy Score:     <%= f.text_field :my_score %><br />
-  Their Score:  <%= f.text_field :other_score %><br />  
-  <%= f.submit %>
-<% end %>
+
+<%= link_to 'Cancel', games_path %>

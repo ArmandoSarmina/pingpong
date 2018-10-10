@@ -1,20 +1,20 @@
 class Game < ActiveRecord::Base
-	belongs_to: player, class_name: "User", foreign_key: "player_id"
-	belongs_to: opponent, class_name:"User", foreign_key: "opponent_id"
+	belongs_to :player, class_name: "User", foreign_key: "player_id"
+	belongs_to :opponent, class_name:"User", foreign_key: "opponent_id"
 
 	MINIMUM_WINNING_POINTS = 21.freeze
 	WINNING_DIFFERENCE = 2.freeze
 
-	validates :date_played
+	validates :date_played,
 		:opponent,
 		:player,
 		:other_score,
 		:my_score,
 		presence:true
 
-	validate : winner_exists
-	validate : at_least_2_points of difference
-	validate : is_not_self
+	validate :winner_exists
+	validate :at_least_2_points_of_difference
+	validate :is_not_self
 
 	private
 
